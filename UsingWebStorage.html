@@ -26,9 +26,13 @@
             //#endregion
 
             //#region //------------------------------------------- Get Storage
-            function getLocalStorage() {}
+            function getLocalStorage() {
+                document.getElementById('localStorageValue').textContent = localStorage.getItem('myLocalData');
+            }
 
-            function getSessionStorage() {}
+            function getSessionStorage() {
+                document.getElementById('sessionStorageValue').textContent = sessionStorage.getItem('mySessionData');
+            }
             //#endregion
         </script>
     </head>
