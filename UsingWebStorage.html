@@ -13,10 +13,15 @@
             function setLocalStorage() {
                 let data = document.getElementById('localData').value;
                 localStorage.setItem('myLocalData', data); 
+
+                document.getElementById('localData').value = "";
             }
 
             function setSessionStorage() {
-                
+                let data = document.getElementById('sessionData').value;
+                sessionStorage.setItem('mySessionData', data)
+
+                document.getElementById('sessionData').value = "";
             }
             //#endregion
         </script>
