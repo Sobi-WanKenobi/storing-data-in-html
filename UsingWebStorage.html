@@ -24,6 +24,12 @@
                 document.getElementById('sessionData').value = "";
             }
             //#endregion
+
+            //#region //------------------------------------------- Get Storage
+            function getLocalStorage() {}
+
+            function getSessionStorage() {}
+            //#endregion
         </script>
     </head>
     <body>
@@ -38,6 +44,15 @@
                         <button class="btn setButton" type="button" onclick="setLocalStorage()">Set Local Data</button>
                     </div>
                 </div>
+                <br/>
+                <div class="row">
+                    <div class="col-6">
+                        <button class="btn getButton" onclick="getLocalStorage()">Get Local Data</button>
+                    </div>
+                    <div class="col pl-5">
+                        <div class="getText" id="localStorageValue"></div>
+                    </div>
+                </div>
             </div>
             <h4>Session Storage</h4>
             <div class="p-4 storageContainer">
@@ -47,6 +62,15 @@
                     </div>
                     <div class="col-4">
                         <button class="btn setButton" type="button" onclick="setSessionStorage()">Set Session Data</button>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-6">
+                        <button class="btn getButton" onclick="getSessionStorage()">Get Session Data</button>
+                    </div>
+                    <div class="col pl-5">
+                        <div class="getText" id="sessionStorageValue"></div>
                     </div>
                 </div>
             </div>
