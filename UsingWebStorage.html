@@ -50,9 +50,23 @@
             //#endregion
 
             //#region //------------------------------------------- Loop Through All Storage
-            function loopThroughLocalStorage() {}
+            function loopThroughLocalStorage() {
+                let dataHtml = "";
+                for (var i = 0; i < localStorage.length; i++) {
+                    dataHtml += "<p>" + localStorage.getItem(localStorage.key(i)) + "</p>";
+                }
 
-            function loopThroughSessionStorage() {}
+                document.getElementById('localStorageAllData').innerHTML = dataHtml;
+            }
+
+            function loopThroughSessionStorage() {
+                let dataHtml = "";
+                for (var i = 0; i < sessionStorage.length; i++) {
+                    dataHtml += "<p>" + sessionStorage.getItem(sessionStorage.key(i)) + "</p>";
+                }
+
+                document.getElementById('sessionStorageAllData').innerHTML = dataHtml;
+            }
             //#endregion
         </script>
     </head>
