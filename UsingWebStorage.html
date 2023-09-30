@@ -68,6 +68,26 @@
                 document.getElementById('sessionStorageAllData').innerHTML = dataHtml;
             }
             //#endregion
+
+            //#region //------------------------------------------- Remove Storage
+            function removeLocalStorage() {
+
+            }
+
+            function removeSessionStorage() {
+
+            }
+            //#endregion
+
+            //#region //------------------------------------------- Clear Storage
+            function clearLocalStorage() {
+
+            }
+
+            function clearSessionStorage() {
+                
+            }
+            //#endregion
         </script>
     </head>
     <body>
@@ -86,6 +106,8 @@
                     <div class="col-6">
                         <button class="btn getButton" onclick="getLocalStorage()">Get Local Data</button>
                         <button class="btn loopButton" onclick="loopThroughLocalStorage()">Get All Local Data</button>
+                        <button class="btn removeButton" onclick="removeLocalStorage()">Remove Local Data</button>
+                        <button class="btn clearButton" onclick="clearLocalStorage()">Clear All Local Data</button>
                     </div>
                     <div class="col pl-5">
                         <div class="getText mb-3" id="localStorageValue"></div>
@@ -107,6 +129,8 @@
                     <div class="col-6">
                         <button class="btn getButton" onclick="getSessionStorage()">Get Session Data</button>
                         <button class="btn loopButton" onclick="loopThroughSessionStorage()">Get All Session Data</button>
+                        <button class="btn removeButton" onclick="removeSessionStorage()">Remove Session Data</button>
+                        <button class="btn clearButton" onclick="clearSessionStorage()">Clear All Session Data</button>
                     </div>
                     <div class="col pl-5">
                         <div class="getText mb-3" id="sessionStorageValue"></div>
